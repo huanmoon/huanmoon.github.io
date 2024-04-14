@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Well well well, I just gave up my minimalist clicker since it’s sooooooooooooooooooooooooooooooo boring then what should I do? the first thing comes to my mind is making a prison server, although it’s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UnderGround Server Development Log">
+<meta property="og:url" content="http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/index.html">
+<meta property="og:site_name" content="huanmoon007">
+<meta property="og:description" content="Well well well, I just gave up my minimalist clicker since it’s sooooooooooooooooooooooooooooooo boring then what should I do? the first thing comes to my mind is making a prison server, although it’s">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-13-23-15-08-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-13-06-46-2024-04-14_00.17.01.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-00-00-08-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-00-13-36-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-21-32-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-30-05-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-38-59-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-40-52-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-09-09-39-image.png">
+<meta property="og:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-13-06-29-2024-04-14_12.39.19.png">
+<meta property="article:published_time" content="2024-04-14T05:09:26.983Z">
+<meta property="article:modified_time" content="2024-04-14T05:10:20.013Z">
+<meta property="article:author" content="huanmoon007">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://huanmoon.github.com/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-13-23-15-08-image.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/android-chrome-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>UnderGround Server Development Log</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/huanmoon">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2024/04/08/My-new-project----Minimalist-Clicker!/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&text=UnderGround Server Development Log"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&is_video=false&description=UnderGround Server Development Log"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=UnderGround Server Development Log&body=Check out this article: http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&name=UnderGround Server Development Log&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&t=UnderGround Server Development Log"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        UnderGround Server Development Log
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">huanmoon007</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-04-14T05:09:26.983Z" class="dt-published" itemprop="datePublished">2024-04-14</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>Well well well, I just gave up my minimalist clicker since it’s sooooooooooooooooooooooooooooooo boring</p>
+<p>then what should I do? the first thing comes to my mind is making a prison server, although it’s 10 times boring than minimalist clicker.</p>
+<p>AND THAT’S WHY I CALL THIS SERVER UNDERGROUND BUT NOT PRISON</p>
+<p>To be specific, it’s a prison server with some rpg stuff like enchanting system, reforging system, advanced combat system and so on</p>
+<p>OH ACHIEVEVOID ISN’T IT A SKYBLOCK &amp; PRISON SERVER</p>
+<p>exactly</p>
+<p>yes</p>
+<p>Alright it’s time to start let’s go</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-13-23-15-08-image.png"> </p>
+<p>This is the plugins I need, usually I will use a chat prefix plugin for luckperms but bro this is a half-prison server and there’s a rebirth system which can affect the prefix so i’m gonna write the prefix by myself this time, and that’s why it’s no need to add it</p>
+<p>ok so now let’s config these plugins</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-13-06-46-2024-04-14_00.17.01.png"></p>
+<p>So I just created a new world with multiverse core, and build a corridor about 160 blocks long</p>
+<p>In the future, the lobby will be divided into 4 parts: mining, combat, farming, and marketplace</p>
+<p>but for now, we just need to work on the mining system, and this pickaxe in the sky represents it (sorry for my poor building skill lmao)</p>
+<p>let’s talk about my mining system</p>
+<p>different from traditional prison servers, there will be some stones, only stones, and when a player mines one of them, it will turn into bedrock for 10 seconds, and there will be 10% chance to give that player a coal, or other mineral.</p>
+<p>sounds easy, right? then let’s do it!!!!</p>
+<p>In order to do that, we need a simple listener to listen if a player breaks a stone, that’s extremely easy to code</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-00-00-08-image.png"></p>
+<p>YO ACHIEVEVOID WHAT THE HACK IS PLAYER GET ITEM EVENT??</p>
+<p>well, it’s a plugin made by me, you can use it instead of simply add an item to player’s inventory, because it doesn’t work if the player’s inventory is full</p>
+<p>anyway, it’s quite easy, isn’t it?</p>
+<p>and now let’s test it</p>
+<p>huuuh nevermind I should make it cobblestone but not stone</p>
+<p>anyway it’s working pretty well, let’s do the next step—-</p>
+<p>LEVELING SYSTEM!</p>
+<p>What is it? well, players can get exp when they mining or fighting, and once they achieve a specific amount of exp, they can level-up, whereas we need to show it on the scoreboard so we need to make the scoreboard first</p>
+<p>this part is a little hard than the first listener</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScoreBoard</span> &#123;  </span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> <span class="variable">score</span> <span class="operator">=</span> <span class="number">15</span>;  </span><br><span class="line">    <span class="keyword">static</span> <span class="type">ScoreboardManager</span> <span class="variable">scoreboardManager</span> <span class="operator">=</span> Bukkit.getScoreboardManager();  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Scoreboard <span class="title function_">setupScoreboard</span><span class="params">(Player player)</span> &#123;  </span><br><span class="line">        <span class="type">Scoreboard</span> <span class="variable">scoreboard</span> <span class="operator">=</span> scoreboardManager.getNewScoreboard();  </span><br><span class="line">        <span class="type">Objective</span> <span class="variable">objective</span> <span class="operator">=</span> scoreboard.registerNewObjective(<span class="string">&quot;test&quot;</span>, <span class="string">&quot;test2&quot;</span>);  </span><br><span class="line">        objective.setDisplaySlot(DisplaySlot.SIDEBAR);  </span><br><span class="line"></span><br><span class="line">        tick(objective, player);  </span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> scoreboard;  </span><br><span class="line">    &#125;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">addLine</span><span class="params">(String content, Objective objective)</span> &#123;  </span><br><span class="line">        <span class="type">Score</span> <span class="variable">line</span> <span class="operator">=</span> objective.getScore(content);  </span><br><span class="line">        line.setScore(score);  </span><br><span class="line">        score--;  </span><br><span class="line">    &#125;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">update</span><span class="params">(Objective objective, Player player)</span> &#123;  </span><br><span class="line">        <span class="keyword">for</span> (String entry : objective.getScoreboard().getEntries()) &#123;  </span><br><span class="line">            objective.getScoreboard().resetScores(entry);  </span><br><span class="line">        &#125;  </span><br><span class="line">        score = <span class="number">15</span>;  </span><br><span class="line"></span><br><span class="line">        addLine(<span class="string">&quot;--------&quot;</span>, objective);  </span><br><span class="line">        addLine(ChatColor.GRAY + <span class="string">&quot;play.undergroundminecraft.net&quot;</span>, objective);  </span><br><span class="line">    &#125;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">tick</span><span class="params">(Objective objective, Player player)</span> &#123;  </span><br><span class="line">        <span class="type">String</span> <span class="variable">fullTitle</span> <span class="operator">=</span> <span class="string">&quot;UNDERGROUND&quot;</span>;  </span><br><span class="line">        <span class="keyword">final</span> String[] animatedTitle = &#123;<span class="string">&quot;&quot;</span>&#125;;  </span><br><span class="line">        <span class="keyword">final</span> <span class="type">int</span>[] animationIndex = &#123;<span class="number">0</span>&#125;;  </span><br><span class="line"></span><br><span class="line">        Bukkit.getScheduler().runTaskTimer(UnderGround.getPlugin(), () -&gt; &#123;  </span><br><span class="line">            animatedTitle[<span class="number">0</span>] += fullTitle.charAt(animationIndex[<span class="number">0</span>]);  </span><br><span class="line">            objective.setDisplayName(ChatColor.DARK_GRAY + <span class="string">&quot;&quot;</span> + ChatColor.BOLD + animatedTitle[<span class="number">0</span>]);  </span><br><span class="line">            animationIndex[<span class="number">0</span>]++;  </span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (animationIndex[<span class="number">0</span>] &gt;= fullTitle.length()) &#123;  </span><br><span class="line">                animationIndex[<span class="number">0</span>] = <span class="number">0</span>;  </span><br><span class="line">                animatedTitle[<span class="number">0</span>] = <span class="string">&quot;&quot;</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line"></span><br><span class="line">            update(objective, player);  </span><br><span class="line">        &#125;, <span class="number">0</span>, <span class="number">5</span>);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>and then we need to setup the scoreboard when a new player joins</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-00-13-36-image.png"></p>
+<p>NIIIIIIICE IT’S WORKING LET’S GO</p>
+<p>so now let’s work on the leveling system</p>
+<p>first, we need to work on the sqlite so we can save player stats for a LOOOONG TIME</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Sqlite</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">PLAYER_STATS</span> <span class="operator">=</span> <span class="string">&quot;player_stats&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">File</span> <span class="variable">databaseFile</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(UnderGround.getPlugin().getDataFolder().getAbsoluteFile() + File.separator + <span class="string">&quot;database.db&quot;</span>);</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Connection connection;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">()</span> <span class="keyword">throws</span> ClassNotFoundException, SQLException, IOException &#123;</span><br><span class="line">        <span class="keyword">if</span>(!databaseFile.exists()) &#123;</span><br><span class="line">            databaseFile.createNewFile();</span><br><span class="line">        &#125;</span><br><span class="line">        Class.forName(<span class="string">&quot;org.sqlite.JDBC&quot;</span>);</span><br><span class="line">        connection = DriverManager.getConnection(<span class="string">&quot;jdbc:sqlite:&quot;</span> + databaseFile.getAbsolutePath());</span><br><span class="line"></span><br><span class="line">        <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;CREATE TABLE IF NOT EXISTS &quot;</span> + PLAYER_STATS + <span class="string">&quot; (&quot;</span> +</span><br><span class="line">                <span class="string">&quot;uuid TEXT PRIMARY KEY, &quot;</span> +</span><br><span class="line">                <span class="string">&quot;exp INTEGER&quot;</span> +</span><br><span class="line">                <span class="string">&quot;)&quot;</span>;</span><br><span class="line"></span><br><span class="line">        connection.createStatement().execute(sql);</span><br><span class="line">        connection.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">addPlayer</span><span class="params">(Player player)</span> <span class="keyword">throws</span> SQLException &#123;</span><br><span class="line">        connection = DriverManager.getConnection(<span class="string">&quot;jdbc:sqlite:&quot;</span> + databaseFile.getAbsolutePath());</span><br><span class="line">        <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;INSERT INTO &quot;</span> + PLAYER_STATS + <span class="string">&quot; (uuid, exp) VALUES (?, ?)&quot;</span>;</span><br><span class="line">        <span class="type">PreparedStatement</span> <span class="variable">statement</span> <span class="operator">=</span> connection.prepareStatement(sql);</span><br><span class="line">        statement.setString(<span class="number">1</span>, player.getUniqueId().toString());</span><br><span class="line">        statement.setInt(<span class="number">2</span>, <span class="number">0</span>);</span><br><span class="line">        statement.execute();</span><br><span class="line">        connection.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">setInteger</span><span class="params">(String table, String columnName, UUID uuid, <span class="type">int</span> value)</span> <span class="keyword">throws</span> SQLException &#123;</span><br><span class="line">        connection = DriverManager.getConnection(<span class="string">&quot;jdbc:sqlite:&quot;</span> + databaseFile.getAbsolutePath());</span><br><span class="line">        <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;UPDATE &quot;</span> + table + <span class="string">&quot; SET &quot;</span> + columnName + <span class="string">&quot; = (?) WHERE uuid = (?)&quot;</span>;</span><br><span class="line">        <span class="type">PreparedStatement</span> <span class="variable">statement</span> <span class="operator">=</span> connection.prepareStatement(sql);</span><br><span class="line">        statement.setInt(<span class="number">1</span>, value);</span><br><span class="line">        statement.setString(<span class="number">2</span>, uuid.toString());</span><br><span class="line">        statement.execute();</span><br><span class="line">        connection.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Integer <span class="title function_">getInteger</span><span class="params">(String table, String columnName, UUID uuid)</span> <span class="keyword">throws</span> SQLException &#123;</span><br><span class="line">        connection = DriverManager.getConnection(<span class="string">&quot;jdbc:sqlite:&quot;</span> + databaseFile.getAbsolutePath());</span><br><span class="line">        <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;SELECT &quot;</span> + columnName + <span class="string">&quot; FROM &quot;</span> + table + <span class="string">&quot; WHERE uuid = (?)&quot;</span>;</span><br><span class="line">        <span class="type">PreparedStatement</span> <span class="variable">statement</span> <span class="operator">=</span> connection.prepareStatement(sql);</span><br><span class="line">        statement.setString(<span class="number">1</span>, uuid.toString());</span><br><span class="line">        <span class="type">ResultSet</span> <span class="variable">resultSet</span> <span class="operator">=</span> statement.executeQuery();</span><br><span class="line">        <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> resultSet.getInt(columnName);  <span class="comment">//save the result into a valuable so that the return value won&#x27;t be affected by connection.close()</span></span><br><span class="line">        connection.close();</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">doesPlayerExist</span><span class="params">(Player player)</span> <span class="keyword">throws</span> SQLException &#123;</span><br><span class="line">        connection = DriverManager.getConnection(<span class="string">&quot;jdbc:sqlite:&quot;</span> + databaseFile.getAbsolutePath());</span><br><span class="line">        <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;SELECT * FROM &quot;</span> + PLAYER_STATS + <span class="string">&quot; WHERE uuid = ?&quot;</span>;</span><br><span class="line">        <span class="type">PreparedStatement</span> <span class="variable">statement</span> <span class="operator">=</span> connection.prepareStatement(sql);</span><br><span class="line">        statement.setString(<span class="number">1</span>, player.getUniqueId().toString());</span><br><span class="line">        <span class="type">ResultSet</span> <span class="variable">resultSet</span> <span class="operator">=</span> statement.executeQuery();</span><br><span class="line">        connection.close();</span><br><span class="line">        <span class="keyword">return</span> resultSet.next();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>then add or load a player’s data when he joins</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-21-32-image.png"></p>
+<p>now let’s work on the leveling system itself</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Exp Needed to Level Up</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1~10</td>
+<td>50</td>
+</tr>
+<tr>
+<td>11~20</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>21~100</td>
+<td>5000</td>
+</tr>
+</tbody></table>
+<p>The max level will be 100, once a player achieves level 100, he can rebirth to unlock more game contents.</p>
+<p>ACHIEVEVOID WHY THE EXP NEEDED SOAR FROM 50 TO 1000 AFTER LEVEL 10</p>
+<p>well, for level 1 to 10, players can only mine stones, which can only give them like 1 exp, but they can unlock coal mine once they get level 10, which can give them 10 exp each block on average</p>
+<p>let’s CODE!!</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-30-05-image.png"></p>
+<p>first, make a hashmap, which stores player’s exp and when player joins we can calculate his level and exp needed</p>
+<p>now put the exp on the scoreboard</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-38-59-image.png"></p>
+<p>let’s test it</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-08-40-52-image.png"></p>
+<p>pretty good</p>
+<p>then calculate the xp needed and the level</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">expIncrease</span><span class="params">(Player player, <span class="type">int</span> amount)</span> <span class="keyword">throws</span> SQLException &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">exp</span> <span class="operator">=</span> HashMaps.exp.get(player.getUniqueId())+amount;</span><br><span class="line">        HashMaps.exp.replace(player.getUniqueId(), exp);</span><br><span class="line">        Leveling.calculateLevel(player);</span><br><span class="line">        Sqlite.setInteger(Sqlite.PLAYER_STATS, <span class="string">&quot;exp&quot;</span>, player.getUniqueId(), exp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">calculateLevel</span><span class="params">(Player player)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">exp</span> <span class="operator">=</span> HashMaps.exp.get(player.getUniqueId());</span><br><span class="line">        <span class="type">int</span> level;</span><br><span class="line">        <span class="type">int</span> expNeeded;</span><br><span class="line">        <span class="keyword">if</span>(exp &gt;= <span class="number">1</span> &amp;&amp; exp &lt;= <span class="number">500</span>) &#123;  <span class="comment">//level 1~10</span></span><br><span class="line">            level = exp/<span class="number">50</span>+<span class="number">1</span>;</span><br><span class="line">            expNeeded = level*<span class="number">50</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(exp &gt;= <span class="number">501</span> &amp;&amp; exp &lt;= <span class="number">20000</span>) &#123;  <span class="comment">//level 11~20</span></span><br><span class="line">            level = exp/<span class="number">1000</span>+<span class="number">1</span>;</span><br><span class="line">            expNeeded = level*<span class="number">1000</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            level = exp/<span class="number">5000</span>+<span class="number">1</span>;</span><br><span class="line">            expNeeded = level*<span class="number">5000</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        HashMaps.levels.put(player.getUniqueId(), level);</span><br><span class="line">        HashMaps.expNeeded.put(player.getUniqueId(), expNeeded);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-09-09-39-image.png"></p>
+<p>get exp when mining a stone</p>
+<p>finally, we’ve done almost the most basic stuff of this game, now building the lobby may be a good idea</p>
+<p>yeah… i know the contents i made today may be a little bit easy and less but i got something important to do in reality so I can’t spend A LOT OF TIME on it</p>
+<p>but anyway I made a schedule for the next dev log</p>
+<p>it will contains:</p>
+<ol>
+<li><p>Custom Items</p>
+</li>
+<li><p>NPC Systems</p>
+</li>
+<li><p>Selling System</p>
+</li>
+<li><p>Hardness and Breaking Power System</p>
+</li>
+</ol>
+<p>Now let’s build</p>
+<p><img src="/home/huan_moon/.var/app/com.github.marktext.marktext/config/marktext/images/2024-04-14-13-06-29-2024-04-14_12.39.19.png"></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="http://github.com/huanmoon">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&text=UnderGround Server Development Log"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&is_video=false&description=UnderGround Server Development Log"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=UnderGround Server Development Log&body=Check out this article: http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&title=UnderGround Server Development Log"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&name=UnderGround Server Development Log&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://huanmoon.github.com/2024/04/14/UnderGround-Server-Development-Log-#1/&t=UnderGround Server Development Log"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2024
+    huanmoon007
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/huanmoon">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
